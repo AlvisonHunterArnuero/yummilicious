@@ -1,30 +1,49 @@
 import React, { Component } from "react";
-import dishes from "../data/dishes";
 import CardWithImage from "./CardWithImage";
+import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dishes: dishes,
+      selectedDish: null,
     };
   }
 
+  onDishSelect(dish) {
+    this.setState({ selectedDish: dish });
+    alert(dish.name);
+  }
+
+  renderDish(dish) {
+    if (dish != null)
+      return (
+        <Card>
+          <CardImg top src={dish.image} alt={dish.name} />
+          <CardBody>
+            <CardTitle>{dish.name}</CardTitle>
+            <CardText>{dish.description}</CardText>
+          </CardBody>
+        </Card>
+      );
+    else return <div></div>;
+  }
   render() {
-    const menu = this.state.dishes.map((dish) => {
+    const menu = this.props.dishes.map((dish) => {
       return (
         <div
           key={dish.id}
-          className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-2"
+          className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 m-2"
         >
           <CardWithImage
+            onClick={() => this.onDishSelect(dish)}
             imgSource={dish.image}
             alt={dish.label}
             title={dish.name}
             subtitle={dish.category}
             cardText={dish.description}
             price={dish.price}
-            btnCaption="ORDER THIS DISH"
+            rating={dish.rating}
           />
         </div>
       );

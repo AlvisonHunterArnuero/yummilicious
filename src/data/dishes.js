@@ -1,13 +1,14 @@
-export default [
+export const DISHES = [
   {
     id: 0,
     name: "Nacatamales",
     image: "/assets/images/nacatamales.png",
     category: "mains",
     label: "Hot",
+    rating: "★★★☆☆",
     price: "4.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
   {
     id: 1,
@@ -15,9 +16,10 @@ export default [
     image: "assets/images/vigoron.png",
     category: "mains",
     label: "",
+    rating: "★★★★☆",
     price: "1.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
   {
     id: 2,
@@ -25,9 +27,10 @@ export default [
     image: "assets/images/frito.png",
     category: "mains",
     label: "New",
+    rating: "★★★★☆",
     price: "3.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
   {
     id: 3,
@@ -35,9 +38,10 @@ export default [
     image: "assets/images/mondongo.png",
     category: "mains",
     label: "",
+    rating: "★★☆☆☆",
     price: "2.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -46,9 +50,10 @@ export default [
     image: "assets/images/baho.png",
     category: "mains",
     label: "",
+    rating: "★★★☆☆",
     price: "3.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -57,9 +62,10 @@ export default [
     image: "assets/images/pinto.png",
     category: "breakfast",
     label: "",
+    rating: "★★★★☆",
     price: "1.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -68,9 +74,10 @@ export default [
     image: "assets/images/cerdofrito.png",
     category: "dinner",
     label: "",
+    rating: "★★★★☆",
     price: "4.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -79,9 +86,10 @@ export default [
     image: "assets/images/sopa.png",
     category: "main",
     label: "",
+    rating: "★★★☆☆",
     price: "4.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -90,9 +98,10 @@ export default [
     image: "assets/images/enchiladas.png",
     category: "dinner",
     label: "",
+    rating: "★★☆☆☆",
     price: "2.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -101,9 +110,10 @@ export default [
     image: "assets/images/frito.png",
     category: "mains",
     label: "",
+    rating: "★★★★☆",
     price: "2.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -112,9 +122,10 @@ export default [
     image: "assets/images/carneasada.png",
     category: "dinner",
     label: "",
+    rating: "★★★★☆",
     price: "3.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 
   {
@@ -123,8 +134,9 @@ export default [
     image: "assets/images/cerdoAdovado.png",
     category: "mains",
     label: "",
+    rating: "★★★☆☆",
     price: "2.99",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor at consequat.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet eros in magna aliquam porttitor.Phasellus porta libero sapien, non egestas dolor efficitur sed. In fringilla cursus dolor.",
   },
 ];

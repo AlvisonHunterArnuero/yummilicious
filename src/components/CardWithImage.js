@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 class CardWithImage extends Component {
   constructor(props) {
-    console.log(props);
     super();
   }
 
@@ -19,7 +18,6 @@ class CardWithImage extends Component {
                       <img
                         className="img-fluid"
                         src={this.props.imgSource}
-                        //src={this.props.imgSource}
                         alt={this.props.name}
                       />
                     </p>
@@ -27,12 +25,12 @@ class CardWithImage extends Component {
                       {this.props.title}
                     </h4>
                     <p className="card-text text-uppercase small">
-                      <b className="text-muted">CATEGORY: </b>
+                      <b className="text-info">CATEGORY: </b>
                       {this.props.subtitle}
                     </p>
-                    <a href="/" className="btn btn-outline-info btn-lg">
-                      {this.props.btnCaption}
-                    </a>
+                    <h3 className="lead text-muted text-uppercase">
+                      {this.props.rating}
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -42,7 +40,7 @@ class CardWithImage extends Component {
                     <h4 className="display-4 card-title">{this.props.price}</h4>
                     <p className="card-text">{this.props.cardText}</p>
                     <a href="/" className="btn btn-outline-primary btn-lg">
-                      {this.props.btnCaption}
+                      Select this dish
                     </a>
                   </div>
                 </div>
