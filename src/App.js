@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import "./App.css";
-import { DISHES } from "./data/dishes";
 import Menu from "./components/MenuComponent";
+import { DISHES } from "./data/dishes";
 
 class App extends Component {
   constructor(props) {

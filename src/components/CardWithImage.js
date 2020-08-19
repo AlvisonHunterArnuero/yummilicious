@@ -1,8 +1,14 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 
 class CardWithImage extends Component {
   constructor(props) {
-    super();
+    super(props);
+  }
+
+  handleSelectedDish(dishSelected) {
+    console.log("Desde el child te mando esto: ", dishSelected);
+    return this.props.onDishSelection(dishSelected);
   }
 
   render() {
@@ -21,7 +27,7 @@ class CardWithImage extends Component {
                         alt={this.props.name}
                       />
                     </p>
-                    <h4 className="card-title text-uppercase text-primary">
+                    <h4 className="card-title text-primary menu-title">
                       {this.props.title}
                     </h4>
                     <p className="card-text text-uppercase small">
@@ -37,11 +43,16 @@ class CardWithImage extends Component {
               <div className="backside">
                 <div className="card">
                   <div className="card-body text-center mt-4">
-                    <h4 className="display-4 card-title">{this.props.price}</h4>
+                    <h4 className="display-3 card-title">
+                      $ {this.props.price}
+                    </h4>
                     <p className="card-text">{this.props.cardText}</p>
-                    <a href="/" className="btn btn-outline-primary btn-lg">
+                    <button
+                      onClick={() => this.handleSelectedDish(this.props)}
+                      className="btn btn-outline-primary btn-lg"
+                    >
                       Select this dish
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

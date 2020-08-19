@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Gloria+Hallelujah&family=Neucha&display=swap");
+
+.menu-title {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+body {
+  font-family: "Neucha", cursive !important;
+}
 section {
   padding: 60px 0;
 }
@@ -102,4 +111,14 @@ section .section-title {
 
 .img-fluid {
   border-radius: 10px !important;
+}
+
+/* Table image thumb*/
+.img-thumbnail {
+  width: 70px !important;
+  border-radius: 50% !important;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle !important;
 }
